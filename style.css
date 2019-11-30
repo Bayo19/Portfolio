@@ -243,6 +243,16 @@ nav #menu li a:hover {
     opacity: 1;
 }
 
+p a {
+    color: white;
+}
+
+p a:hover {
+    text-decoration: none;
+    color: #E49273;
+    transition: .27s ease-in-out;
+}
+
 @media(max-width: 768px) {
     #toggle {
         visibility: visible;
@@ -300,112 +310,111 @@ nav #menu li a:hover {
 
 /* projects section ----------*/
 
-h6 {
+.containerproj {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.item1 {
+    display: grid;
+    color: white;
+}
+
+.item2 {
+    display: grid;
+    color: white;
+}
+
+.card {
+    background: #f5f5f5;
+    margin: 5px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: .35s;
+}
+
+
+/* .card:hover {
+    transform: translateY(-5px);
+    box-sizing: border-box;
+    transition: .35s;
+    box-shadow: 0 2px 2px rgba(41, 47, 56, 0.1), 0 4px 4px rgba(41, 47, 56, 0.1), 0 8px 8px rgba(41, 47, 56, 0.1), 0 16px 16px rgba(41, 47, 56, 0.1), 0 32px 32px rgba(41, 47, 56, 0.1);
+    background: #fdfdfd;
+} */
+
+.card h2 {
     text-align: center;
+    text-transform: lowercase;
+    padding: 5px;
+    margin: 5px;
 }
 
-.vertical {
-    margin-top: 40px;
-    border-left: 1px solid #fff;
-    height: 80px;
-    position: absolute;
-    left: 50%;
+.card h2 a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #439A86;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: inherit;
 }
 
-.project {
-    height: 500px;
+#cardp1 {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: inherit;
+    color: #E49273;
 }
 
-.project1 {
-    background: url(https://images.unsplash.com/photo-1506038634487-60a69ae4b7b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat 50% 50%;
-    background-size: cover;
+#cardp2 {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: inherit;
+    color: #E49273;
 }
 
-.project1::after {
-    content: "Coding Resources.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
+.card ul {
+    color: black;
+    list-style: none;
+}
+
+.card ul li {
     display: block;
-    top: 80%;
-    left: -60%;
-    right: 0;
-    bottom: 0;
-}
-
-.project2 {
-    background: url(https://multicolor.io/static/03d161e881f932000e3629c7ca6a01de/67481/2019-11-02-slanted-evergreen-tree-on-colorful-sky-backdrop.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project2::after {
-    content: "TaoGenerator.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 80%;
-    left: 85%;
-    right: 0;
-    bottom: 0;
-}
-
-.project3 {
-    background: url(https://multicolor.io/static/75717badc437706b2f14be6c890f7fae/67481/2019-10-17-tree-branches-with-pink-flowers.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project3::after {
-    content: "Otherproj.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 80%;
-    left: -50%;
-    right: 0;
-    bottom: 0;
-}
-
-.project4 {
-    background: url(https://multicolor.io/static/fd3c566843cf145f7e263a28fd00cfa3/67481/2019-10-14-wave-breaking-on-rocks.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project4::after {
-    content: "projectoFour0.";
-    font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 10%;
-    left: 90%;
-    right: 0;
-    bottom: 0;
+    color: #4D685A;
 }
 
 @media(max-width: 768px) {
-    .project {
-        width: 90% !important;
-        margin: 14px auto;
+    .containerproj {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
     }
-    .vertical {
-        display: none;
-    }
-    .project1::after,
-    .project2::after,
-    .project3::after,
-    .project4::after {
-        display: none;
+    .card ul li {
+        display: inline-block;
+        left: 105px;
+        position: relative;
+        color: #4D685A;
     }
 }
 
 
 /* footer section ----------- */
+
+.footer {
+    position: relative;
+}
 
 .collab {
     text-align: right;
@@ -438,6 +447,96 @@ h6 {
     padding-left: 20px;
 }
 
+.tags {
+    margin-left: 17px;
+    margin-top: 50px;
+}
+
+.tag1 {
+    font-size: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid #f0db4f;
+    margin-top: -20px;
+}
+
+.tag2 {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid #F16529;
+    margin-top: -20px;
+}
+
+.tag3 {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid #29A9DF;
+    margin-top: -20px;
+}
+
+.tag4 {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-top: -20px;
+}
+
+.tag5 {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 2px solid #01FFF5;
+    margin-top: -20px;
+}
+
+@media(max-width: 500px) {
+    .tag5 {
+        margin-right: 5px;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 3px;
+        font-size: 20px;
+        border: 2px solid #01FFF5;
+        margin-top: 20px;
+    }
+}
+
 #personal h4 a {
     color: #E49273;
     text-decoration: none;
@@ -445,6 +544,11 @@ h6 {
 
 #address h4 {
     color: #A8D0DB;
+}
+
+#address h4 a {
+    text-decoration: none;
+    color: #E49273;
 }
 
 #media,
