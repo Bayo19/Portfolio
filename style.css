@@ -326,6 +326,11 @@ p a:hover {
     color: white;
 }
 
+.item3 {
+    display: grid;
+    color: white;
+}
+
 .card {
     background: #f5f5f5;
     margin: 5px;
