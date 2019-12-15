@@ -390,6 +390,18 @@ p a:hover {
     color: #E49273;
 }
 
+#cardp3 {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: inherit;
+    color: #E49273;
+}
+
 .card ul {
     color: black;
     list-style: none;
