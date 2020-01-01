@@ -426,6 +426,13 @@ p a:hover {
     }
 }
 
+@media(max-width: 360px) {
+    .card ul li {
+        display: inline-block;
+        left: 0;
+    }
+}
+
 
 /* footer section ----------- */
 
