@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper wow fadeIn" data-wow-duration=".5s" data-wow-delay=".5s">
         <!-- navbar start -->
         <nav>
             <span id="brand">
@@ -62,8 +62,8 @@
                         <h3 class="wow fadeInUp">work</h3><br>
 
                         <div class="containerproj">
-                            <div class="item3">
-                                <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay="1.41s">
+                            <div class="item4">
+                                <div class="card">
                                     <h2>
                                         <a href="https://e-commerce-design.netlify.com/" target="_blank ">Yoshi E-commerce</a></h2>
                                     <p id="cardp3">E-commerce landing page web design</p>
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="item1">
-                                <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay="1.45s">
+                                <div class="card">
                                     <h2><a href="https://bayo19.github.io/TaoGenerator/" target="_blank">TaoGenerator</a></h2>
                                     <p id="cardp1">A web app for generating random Chapters of the Tao Te Ching using a local JSON file.</p>
                                     <ul>
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="item2">
-                                <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay="1.49s">
+                                <div class="card">
                                     <h2><a href="https://codingresources.io/" target="_blank">Coding Resources</a></h2>
                                     <p id="cardp2">A website aimed primarily at junior developers, for finding the best tools and tutorials to learn web development</p>
                                     <ul>
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="item3">
-                                <div class="card wow fadeIn" data-wow-duration="1s" data-wow-delay="1.53s">
+                                <div class="card">
                                     <h2>
                                         <a href="https://eager-dijkstra-6f367c.netlify.com/" target="_blank ">ConvertApp</a></h2>
                                     <p id="cardp3">Quickly convert different common units of measurement</p>
@@ -210,6 +210,32 @@
             opacity: 0,
             ease: Expo.easeInOut
         }, 0.1);
+
+        // actually the first card
+        TweenMax.from(".item4", 1, {
+            delay: 1,
+            y: 6,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".item1", 1, {
+            delay: 1.25,
+            y: 6,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".item2", 1, {
+            delay: 1.40,
+            y: 6,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".item3", 1, {
+            delay: 1.65,
+            y: 6,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
 
         // nav animation ends
         new WOW().init();
