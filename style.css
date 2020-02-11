@@ -137,6 +137,7 @@ nav #menu li {
     line-height: 80px;
     position: relative;
     transition: all 0.3s ease-out;
+    font-family: 'Schoolbell', cursive;
 }
 
 nav #menu li span {
