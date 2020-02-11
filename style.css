@@ -137,7 +137,6 @@ nav #menu li {
     line-height: 80px;
     position: relative;
     transition: all 0.3s ease-out;
-    font-family: 'Schoolbell', cursive;
 }
 
 nav #menu li span {
@@ -229,6 +228,7 @@ nav #menu li a:hover {
     visibility: hidden;
     opacity: 0;
     transition: all 1s ease-out;
+    font-family: 'Schoolbell', cursive;
 }
 
 #resize #menu {
@@ -258,6 +258,7 @@ nav #menu li a:hover {
 
 #resize #menu li a {
     color: #fff;
+    font-family: 'Schoolbell', cursive;
 }
 
 #resize #menu li a:hover {
