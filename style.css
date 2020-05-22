@@ -1,15 +1,15 @@
 /* basic styling */
 
-@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: #003554;
-    color: #fff;
+    background: #00335a;
+    color: #59ebff;
     font-size: 110%;
 }
 
@@ -97,14 +97,14 @@ body {
 
 nav {
     width: 100%;
-    background: #003554;
+    background: #00335a;
     height: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
     /* font-family: 'Walter Turncoat', cursive;
      */
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 nav #brand {
@@ -115,7 +115,7 @@ nav #brand {
 }
 
 nav #brand a {
-    color: #fff;
+    color: #59ebff;
     transition: all 0.3s ease-out;
 }
 
@@ -144,7 +144,7 @@ nav #menu li span {
 }
 
 nav #menu li a {
-    color: #fff;
+    color: #59ebff;
 }
 
 nav #menu li a:hover {
@@ -222,13 +222,13 @@ nav #menu li a:hover {
     z-index: 1;
     top: 0px;
     position: fixed;
-    background: #002032;
+    background: #00335a;
     width: 100%;
     height: 100%;
     visibility: hidden;
     opacity: 0;
     transition: all 1s ease-out;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #resize #menu {
@@ -257,8 +257,8 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-    color: #fff;
-    font-family: 'Schoolbell', cursive;
+    color: #0dc1d9;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #resize #menu li a:hover {
@@ -281,12 +281,12 @@ p a:hover {
 }
 
 .container {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 90%;
 }
 
 h3 {
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 @media(max-width: 768px) {
@@ -486,7 +486,7 @@ h3 {
 
 .collab {
     text-align: right;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .collab p {
@@ -505,13 +505,13 @@ h3 {
 }
 
 .info p {
-    color: #439A86;
+    color: #0ce4b3;
     font-size: lighter;
 }
 
 .info li {
     font-weight: lighter;
-    color: #fff;
+    color: #59ebff;
     font-size: 16px;
     padding-left: 20px;
 }
@@ -519,13 +519,14 @@ h3 {
 .tags {
     margin-left: 17px;
     margin-top: 50px;
+    color: #fff;
 }
 
 .tag1 {
     font-size: 30px;
     margin-top: -30px;
     margin-bottom: 20px;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .tag {
@@ -610,6 +611,7 @@ h3 {
 #personal h4 a {
     color: #E49273;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 #address h4 {
@@ -619,6 +621,7 @@ h3 {
 #address h4 a {
     text-decoration: none;
     color: #E49273;
+    font-weight: bolder;
 }
 
 #media,
@@ -635,7 +638,8 @@ h3 {
     position: relative;
     left: -33px;
     text-decoration: none;
-    color: #A8D0DB;
+    color: #59ebff;
+    font-weight: bolder;
 }
 
 @media(max-width: 768px) {
@@ -661,7 +665,7 @@ h3 {
 }
 
 .hero-content p {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
     color: #D3D0CB;
 }
